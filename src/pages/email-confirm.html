@@ -1,0 +1,64 @@
+---
+subject: Подтверждение e-mail адреса
+---
+
+<wrapper style="background: #568FEB;">
+  <container class="header" style="background: #568FEB;">
+    <row>
+      <columns>
+        <left>
+          <spacer size="36"></spacer>
+
+          <img src="assets/img/logo.svg" />
+
+          <spacer size="36"></spacer>
+        </left>
+      </columns>
+    </row>
+    <row>
+      <columns>
+        <center>
+          <spacer size="36"></spacer>
+          <img src="assets/img/envelope.png" />
+          <spacer size="36"></spacer>
+        </center>
+      </columns>
+    </row>
+  </container>
+
+  <container class="body-border">
+    <row>
+      <columns class="body-columns">
+        <h1>Подтверждение e-mail адреса</h1>
+        <p>
+            <p class='strong'>
+   {{{{raw}}}}
+   {{ student_name }},
+   {{{{/raw}}}}</p>
+   
+   {% load staticfiles %}{% load i18n %} {% blocktrans %} рады приветствовать вас на ALIBRA ONLINE! Надеемся, вам понравится изучать иностранные языки вместе с нами. Желаем удачи!
+   Перейдите по ссылке {{{{raw}}}}{{ link }}{{{{/raw}}}} для подтверждения Вашего email.{% endblocktrans %}
+          </p>
+        <spacer size="50"></spacer>
+
+        <p class="sub">
+          С уважением, <br />
+          Служба технической поддержки <br />
+          ALIBRA ONLINE.
+        </p>
+      </columns>
+    </row>
+  </container>
+  <spacer size="36"></spacer>
+
+  <container style="background: #568FEB;">
+    <row>
+      <columns>
+        <p class="sub" style="color: white; opacity: 0.5">
+          © 2019 ALIBRA SCHOOL <br />
+          Сеть школ иностранных языков
+        </p>
+      </columns>
+    </row>
+  </container>
+</wrapper>
